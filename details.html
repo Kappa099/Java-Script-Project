@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./details.css">
+</head>
+<body>
+    <header>
+        <a class="home" href="./index.html">Home Page</a>
+    </header>
+
+    <div class="filter-container">
+        <div class="price">
+            <label for="price-range">Price</label>
+            <input type="range" id="price-range" min="0" max="1000" step="10">
+            <span id="price-value">$0</span>
+            <input type="range" id="price-range-to" min="0" max="1000" step="10">
+            <span id="price-value2">$0</span>
+  
+         </div>
+         
+
+        <div class="roomtype">
+            <label for="room-type">Choose a room type:</label>
+            <select id="room-type" name="room-type">
+                <option value="-1">-- Default --</option>
+                <option value="1">Basic Room</option>
+                <option value="2">Premium Room</option>
+                <option value="3">Deluxe Room</option>
+            </select>
+        </div>
+    
+
+        <div class="guestrange">
+            <label for="guest-number">Guests</label>
+            <select name="guest-range" id="guest-range">
+                <option value="-1">-- Default --</option>
+                <option value="2">2 Adults</option>
+                <option value="3">3 Adults</option>
+                <option value="4">4 Adults</option>
+                <option value="5">5 Adults</option>
+                <option value="6">6 Adults</option>
+            </select>
+        </div>
+    
+
+  
+    </div>
+    <main class="main"></main>
+    
+    <script src="./details.js"></script>
+</body>
+</html>

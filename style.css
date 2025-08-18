@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+.home {
+    text-decoration: none;
+    font-size: 30px;
+    align-self: center;
+    padding-top: 50px;
+}
+a:hover {
+    cursor: pointer;
+    transform: scale(1.05); /* slightly increases size */
+    transition: transform 0.2s ease; /* makes the scaling smooth */
+}

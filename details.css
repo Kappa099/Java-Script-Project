@@ -1,0 +1,298 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+.home {
+    text-decoration: none;
+    font-size: 30px;
+    align-self: center;
+    padding-top: 50px;
+}
+a:hover {
+    cursor: pointer;
+    transform: scale(1.05); /* slightly increases size */
+    transition: transform 0.2s ease; /* makes the scaling smooth */
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #333;
+}
+input[type="range"] {
+    -webkit-appearance: none; /* Remove default styles */
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+/* Track */
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 8px;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    border-radius: 5px;
+}
+
+/* Thumb (the handle) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #000000;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(255, 0, 0, 0.5);
+    transition: background 0.3s ease;
+    margin-top: -5px; /* vertically center thumb */
+}
+
+/* For Firefox */
+input[type="range"]::-moz-range-track {
+    height: 8px;
+    background: linear-gradient(to right, #f90000, #000000);
+    border-radius: 5px;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    background: #ff0000;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hotel-details {
+    margin-bottom: 40px;
+}
+
+.hotel-details img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.hotel-info {
+    max-width: 600px;
+    margin-left: 20px;
+}
+
+.hotel-info p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+.room-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    margin-top: 40px;
+}
+
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(33.33% - 20px);
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #777;
+}
+
+.card .btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.card .btn:hover {
+    background-color: #003d7a;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+select, #sortAsc, #sortDesc {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+
+#sel {
+    width: 250px;
+}
+
+button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #003d7a;
+}
+
+
+#sel, button {
+    margin-bottom: 20px;
+}
+.filter-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+.filter-container > div {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: #333;
+}
+
+select, input[type="date"] {
+    width: 200px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+    background-color: #f0f8ff;
+}
+
+select:focus, input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+select option {
+    padding: 10px;
+    font-size: 14px;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('arrow-down-icon.png'); 
+    background-position: right 15px center;
+    background-repeat: no-repeat;
+    padding-right: 40px;
+}
+
+input[type="date"] {
+    background-color: #f0f8ff;
+}
+.calendar{
+    display: flex;
+}
+.price, .roomtype, .guestrange, .date-range {
+    margin-bottom: 20px;
+}
+
+.filter-container button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-container button:hover {
+    background-color: #0056b3;
+}
+
+
+
+@media (max-width: 1200px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%; 
+    }
+}
