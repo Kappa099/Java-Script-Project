@@ -22,5 +22,5 @@ header{
 a:hover {
     cursor: pointer;
     transform: scale(1.05); /* slightly increases size */
-    transition: transform 0.2s ease; /* makes the scaling smooth */
+    transition: transform 0.2s ease; 
 }
